@@ -31,6 +31,7 @@ const addButton = document.getElementById('member-gen')
 
 
 addButton.addEventListener('click', function(){
+  alert("copia prima l'url della tua foto ")
 
   const userNome = prompt('inserisci il tuo nome ')
   const userRole = prompt('inserisci il tuo ruole ')
