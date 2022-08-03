@@ -22,5 +22,9 @@ body{
 
 .mycontainer{
   max-width: 700px;
-  margin: 0 auto;
+  margin: 40px auto;
+}
+
+.mycontainer h1{
+  font-size: 1.5rem;
 }

@@ -16,7 +16,7 @@ function addMemberDom(membri){
     gridEl.innerHTML += 
     `<div class="col">
       <img src="img/${membro.img}" alt="">
-      <div class="card-body">
+      <div class="card-body text-secondary">
         <h3>${membro.nome}</h3>
         <p class="card-text">${membro.ruolo}</p>
       </div>
@@ -36,14 +36,17 @@ addButton.addEventListener('click', function(){
   const userRole = prompt('inserisci il tuo ruole ')
   const userImg = prompt('inserisci il tuo percorso immagine')
   addMember(userNome, userRole, userImg, membri)
-  gridEl.innerHTML += 
-  `<div class="col">
-    <img class="new-member-img" src="${userImg}" alt="">
-    <div class="card-body">
-      <h3>${userNome}</h3>
-      <p class="card-text">${userRole}</p>
-    </div>
-  </div>`
+  if(!userNome.length == 0 && !userRole == 0 && !userImg == 0){
+    gridEl.innerHTML += 
+    `<div class="col">
+      <img class="new-member-img" src="${userImg}" alt="">
+      <div class="card-body text-secondary">
+        <h3>${userNome}</h3>
+        <p class="card-text">${userRole}</p>
+      </div>
+    </div>`
+    
+  }
   
 })
 
