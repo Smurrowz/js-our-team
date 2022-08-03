@@ -28,3 +28,6 @@ body{
 .mycontainer h1{
   font-size: 1.5rem;
 }
+.col h3{
+  font-family: 'Dancing Script', cursive;
+}
