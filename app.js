@@ -35,7 +35,7 @@ addButton.addEventListener('click', function(){
 
   const userNome = prompt('inserisci il tuo nome ')
   const userRole = prompt('inserisci il tuo ruole ')
-  const userImg = prompt('inserisci il tuo percorso immagine')
+  const userImg = prompt("inserisci il percorso assoluto dell'immagine")
   addMember(userNome, userRole, userImg, membri)
   if(!userNome.length == 0 && !userRole == 0 && !userImg == 0){
     gridEl.innerHTML += 
